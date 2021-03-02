@@ -1,0 +1,17 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background: url('./assets/background-img.jpg') top center no-repeat #bababa;
+    background-size: cover;
+    overflow-x: hidden;
+}
+a {
+    color: white;
+}
+div.content {
+    margin-left: 25%;
+    height: 100vh;
+    width: 100%;
+}
