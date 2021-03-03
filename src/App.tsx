@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Cv from './components/Cv';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
-import Porfolio from './components/Portfolio';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <SideBar />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/Porfolio' component={Porfolio} />
+          <Route path='/porfolio' component={Portfolio} />
           <Route path='/about' component={AboutMe} />
           <Route path='/contact' component={Contact} />
           <Route path='/cv' component={Cv} />

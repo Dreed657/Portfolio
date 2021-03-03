@@ -1,35 +1,16 @@
-import React, { useEffect } from 'react';
-import L from 'leaflet';
-import { } from 'mapbox-gl-leaflet';
+import React from 'react';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 
-function MapContainer() {
-    let mapContainer: any;
-
-    useEffect(() => {
-      const initialState = {
-        lng: 11,
-        lat: 49,
-        zoom: 4
-      };
-  
-      const map = L.map(mapContainer).setView([initialState.lat, initialState.lng], initialState.zoom);
-  
-      // the attribution is required for the Geoapify Free tariff plan
-      map.attributionControl.setPrefix('').addAttribution('Powered by <a href="https://www.geoapify.com/" target="_blank">Geoapify</a> | © OpenStreetMap <a href="https://www.openstreetmap.org/copyright" target="_blank">contributors</a>');
-  
-      var myAPIKey = '4aa12a33c3124fb78c76819922608a89';
-      const mapStyle = 'https://maps.geoapify.com/v1/styles/osm-carto/style.json';
-  
-      L.mapboxGL({
-        style: `${mapStyle}?apiKey=${myAPIKey}`,
-        accessToken: 'no-token'
-      }).addTo(map);
-    }, [mapContainer]);
-  
-    return (
-      <div className="map-container" ref={el => mapContainer = el}>
-      </div>
-    )
+function Map() {
+  return (
+    <MapContainer center={[42.6978634,23.3221789]} zoom={12} scrollWheelZoom={false}>
+      <TileLayer
+        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Marker position={[42.6978634,23.3221789]}></Marker>
+    </MapContainer>
+  )
 }
 
-export default MapContainer;
+export default Map;

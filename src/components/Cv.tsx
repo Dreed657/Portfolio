@@ -4,7 +4,6 @@ function Cv() {
     return (
         <div className="content">
             <h1>My pdf</h1>
-       
         </div>
     )
 }

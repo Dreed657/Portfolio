@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Porfolio = () => {
+function Portfolio() {
     return (
         <div className="content bg-white">
-            <h1>Projects poge</h1>
+            <h1>Projecdfgdfdfgdfgts poge</h1>
         </div>
     )
 }
 
-export default Porfolio;
+export default Portfolio;

@@ -1,12 +1,9 @@
-@import '~mapbox-gl/dist/mapbox-gl.css';
-@import '~leaflet/dist/leaflet.css';
-
 * {
     padding: 0px;
     margin: 0px;
 }
 body {
-    background: url('./assets/background-img.jpg') top center no-repeat #bababa;
+    background: url("./assets/background-img.jpg") top center no-repeat #bababa;
     background-size: cover;
     overflow-x: hidden;
     max-height: 100vh;
@@ -38,3 +35,9 @@ div.home-content > h1 {
     top: 20%;
     left: 35%;
 }
+.leaflet-container {
+    height: 100vh;
+}
+.map-box {
+    height: 100vh;
+  }

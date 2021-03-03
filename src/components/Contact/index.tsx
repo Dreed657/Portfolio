@@ -1,13 +1,13 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import styles from './index.module.css';
-import MapContainer from '../Map';
+import Map from '../Map';
 
 function Contact() {
     return (
         <div className={styles.container}>
             <div className="row h-100">
-                <div className="col-lg-4 p-0">
+                <div className="col p-0">
                     <div className={styles.links}>
                         <h1 className="title">Get in touch</h1>
                         <p>If you wanna get in touch, talk to me about a project collaboration or just say hi, just follow up any of the links below.</p>
@@ -76,9 +76,8 @@ function Contact() {
                     </div>
                 </div>
                 <div className="col p-0">
-                    <div className="map h-100 bg-danger">
-                        {/* <MapContainer /> */}
-                        <p className="text-center">Map placeholder</p>
+                    <div className="map-box h-100 bg-danger">
+                        <Map />
                     </div>
                 </div>
             </div>
