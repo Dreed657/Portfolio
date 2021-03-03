@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import SideBar from './components/sidebar/SideBar';
+import SideBar from './components/Sidebar';
 import Home from './components/Home';
-import Projects from './components/Projects';
 import Cv from './components/Cv';
+import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
+import Porfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
         <SideBar />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/projects' component={Projects} />
+          <Route path='/Porfolio' component={Porfolio} />
+          <Route path='/about' component={AboutMe} />
+          <Route path='/contact' component={Contact} />
           <Route path='/cv' component={Cv} />
         </Switch>
       </Router>

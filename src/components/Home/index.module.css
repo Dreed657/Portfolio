@@ -1,0 +1,18 @@
+.container {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+.textLine {
+    font-weight: 500;
+    color: white;
+    font-size: 50px;
+    text-align: left;
+}
+.focuesText {
+    color: 	rgb(60, 160, 185);
+    font-weight: 900;
+}
+.button {
+    margin-left: 10%;
+}

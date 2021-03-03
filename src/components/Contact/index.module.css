@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    margin-left: 25%;
+    background-color: #fff;
+}
+.links {
+    padding: 50px;
+    text-align: left;
+}
+.anchers {
+    color: rgb(90, 182, 204);
+}

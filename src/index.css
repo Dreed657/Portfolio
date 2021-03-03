@@ -1,3 +1,6 @@
+@import '~mapbox-gl/dist/mapbox-gl.css';
+@import '~leaflet/dist/leaflet.css';
+
 * {
     padding: 0px;
     margin: 0px;
@@ -6,12 +9,32 @@ body {
     background: url('./assets/background-img.jpg') top center no-repeat #bababa;
     background-size: cover;
     overflow-x: hidden;
+    max-height: 100vh;
 }
 a {
     color: white;
+}
+a:hover {
+    text-decoration: none;
 }
 div.content {
     margin-left: 25%;
     height: 100vh;
     width: 100%;
+}
+
+div.home-page {
+    background-color: rgb(89, 89, 89, 0.5);
+    margin-left: 25%;
+    height: 100vh;
+    width: 100%;
+}
+
+div.home-content {
+    position: absolute;
+}
+div.home-content > h1 {
+    font-size: 150px;
+    top: 20%;
+    left: 35%;
 }
